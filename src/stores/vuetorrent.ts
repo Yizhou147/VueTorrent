@@ -21,7 +21,7 @@ import { DarkLegacy, LightLegacy } from '@/themes'
 export const useVueTorrentStore = defineStore(
   'vuetorrent',
   () => {
-    const language = ref('en')
+    const language = ref('zh-Hans')
     const theme = reactive({
       mode: ThemeMode.SYSTEM,
       light: LightLegacy.id,
@@ -305,7 +305,7 @@ export const useVueTorrentStore = defineStore(
       defaultTorrentDetailTab,
       logoutUrl,
       $reset: () => {
-        language.value = 'en'
+        language.value = 'zh-Hans'
         theme.mode = ThemeMode.SYSTEM
         theme.light = LightLegacy.id
         theme.dark = DarkLegacy.id
